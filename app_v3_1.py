@@ -27,8 +27,8 @@ def log_search_history(user_name, size, search_query, num_results, results):
     df.to_csv(filename, index=False)
 
 # --- Google Search API Settings ---
-API_KEY = st.secrets["GOOGLE_API_KEY"]
-CSE_ID = st.secrets["GOOGLE_CSE_ID"]
+API_KEY = st.secrets["AIzaSyAHsTjNeUH_PzRmuwxoF2eW0wFjqIBf0Uk"]
+CSE_ID = st.secrets["60fb72f0c109b47ea"]
 
 # --- Google Image Search ---
 def google_search(query):
