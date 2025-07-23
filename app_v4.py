@@ -62,3 +62,4 @@ if uploaded_file:
     else:
         st.warning("No similar items found. Try another image.")
 else:
+    st.info("Please upload an image to begin search.")
