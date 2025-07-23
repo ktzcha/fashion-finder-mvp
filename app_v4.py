@@ -33,8 +33,8 @@ if uploaded_file:
     image_rgb.save(buffered, format="JPEG")
     img_str = base64.b64encode(buffered.getvalue()).decode()
 
-    API_KEY = st.secrets["AIzaSyAHsTjNeUH_PzRmuwxoF2eW0wFjqIBf0Uk"]
-    CSE_ID = st.secrets["60fb72f0c109b47ea"]
+    API_KEY = st.secrets["GOOGLE_API_KEY"]
+    CSE_ID = st.secrets["CSE_ID"]
     SEARCH_URL = "https://www.googleapis.com/customsearch/v1"
 
     params = {
