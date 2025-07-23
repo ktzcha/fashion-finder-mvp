@@ -29,7 +29,8 @@ if uploaded_file:
 
     # Encode image to base64
     buffered = io.BytesIO()
-    image.save(buffered, format="JPEG")
+    image_rgb = image.convert("RGB")
+    image_rgb.save(buffered, format="JPEG")
     img_str = base64.b64encode(buffered.getvalue()).decode()
 
     API_KEY = st.secrets["AIzaSyAHsTjNeUH_PzRmuwxoF2eW0wFjqIBf0Uk"]
