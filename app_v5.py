@@ -11,7 +11,7 @@ from io import BytesIO
 
 # Page configuration for mobile optimization
 st.set_page_config(
-    page_title="Product Price Finder",
+    page_title="Fashion Finder",
     page_icon="🛍️",
     layout="wide",
     initial_sidebar_state="collapsed"
